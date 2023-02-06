@@ -1,0 +1,47 @@
+{
+  "name": "mntn",
+  "version": "1.0.0",
+  "description": "Личный проект MNTN",
+  "private": true,
+  "author": "IT-Sanguis",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "htmlhint": "^1.1.4",
+    "imagemin-webp": "^6.0.0",
+    "postcss": "^8.4.20",
+    "postcss-scss": "^4.0.6",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-htmlacademy": "^1.1.4",
+    "stylelint-config-prettier": "^9.0.4"
+  },
+  "scripts": {
+    "hint": "htmlhint build/*.html",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "test": "npm run hint && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Блог о походах и путешествиях «MNTN»">
+  <meta name="description" content="Блог о походах и путешествиях «MNTN»">
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Extrabold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <title>MNTN | Блог о походах и путешествиях</title>
+  <!-- <script src="js/picturefill.min.js" async></script> -->
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+
+  <div style="display:none">
+    <include src="build/img/sprite/sprite.svg"></include>
+  </div>
+
+  <header class="page-header" id="page-header">
+    <div class="page-header__container container">
+      <div class="page-header__nav-wrapper">
+        <a class="page-header__logo logo" href="#">
+          <svg class="logo__img" role="img" width="108" height="38" aria-labelledby="logotype">
+            <title id="logotype">Логотип «MNTN»</title>
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Снаряжение</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Блог</a>
+            </li>
+          </ul>
+          <div class="account">
+            <a class="account__link account__link--login" href="#account">
+              <svg role="img" width="30" height="27">
+                <use xlink:href="#account"></use>
+              </svg>
+              <span class="account__text">Аккаунт</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__social social">
+        <p class="social__desc">Подписывайтесь на нас</p>
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/" title="Instagram">#</a>
+        <a class="social__link social__link--twitter" href="https://twitter.com/" title="Twitter">#</a>
+      </div>
+      <nav class="page-header__sidenav sidenav">
+        <ul class="sidenav__list">
+          <li class="sidenav__item"><a class="sidenav__link sidenav__link--current" href="#page-header">Начало</a></li>
+          <li class="sidenav__item"><a class="sidenav__link" href="#level">1</a></li>
+          <li class="sidenav__item"><a class="sidenav__link" href="#essentials">2</a></li>
+          <li class="sidenav__item"><a class="sidenav__link" href="#study">3</a></li>
+        </ul>
+      </nav>
+      <section class="page-header__intro intro">
+        <p class="intro__pretitle pretitle">Путеводитель</p>
+        <h1 class="intro__title title">Будь готов к горам и за их пределами!</h1>
+        <a class="intro__link link link--scroll" href="#">Прокрути вниз</a>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="level" id="level">
+        <div class="level__content">
+          <p class="level__pretitle pretitle">Для начала</p>
+          <h2 class="level__title title">Какой у тебя уровень туриста?</h2>
+          <p class="level__desc">Определение уровня твоей горной подготовки может быть важным инструментом при
+            планировании будущих вылазок. Этот путеводитель по уровням горных прогулок поможет вам планировать походы
+            согласно различным рейтингам, установленными различными сайтами, такими как All Trails и Modern Hiker.
+            Какой ты турист - новичок, любитель, продвинутый, специалист или эксперт?</p>
+          <a class="level__link link" href="#">Читать больше</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
+          <img class="level__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
+            alt="Пеший турист идёт по горной тропе">
+        </picture>
+      </section>
+
+      <section class="essentials" id="essentials">
+        <div class="essentials__content">
+          <p class="essentials__pretitle pretitle">Походные основы</p>
+          <h2 class="essentials__title title">Выбираем подходящую горную экипировку!</h2>
+          <p class="essentials__desc">Самое приятное в начале пеших походов заключается в том, что вам на самом деле не
+            нужно никакого специального снаряжения, вы, вероятно, можете обойтись теми вещами, которые у вас уже
+            есть.<br>Начнем с одежды. Типичная ошибка, которую допускают начинающие туристы, заключается в том, что они
+            носят джинсы и обычную одежду, которая станет тяжелой и будет натирать, если они вспотеют или намокнут.</p>
+          <a class="essentials__link link" href="#">Читать больше</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
+          <img class="essentials__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
+            alt="Пеший турист смотрит на горы, стоя на скале">
+        </picture>
+      </section>
+
+      <section class="study" id="study">
+        <div class="study__content">
+          <p class="study__pretitle pretitle">Куда вы идете - это ключ</p>
+          <h2 class="study__title title">Поймите свою карту и время</h2>
+          <p class="study__desc">Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в пакет
+            Zip-Lock. Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать.
+            Мне нравится знать, какой будет мой следующий ориентир во время похода. Например, я читаю путеводитель и
+            знаю, что, скажем, через милю я поворачиваю направо на перекрестке.</p>
+            <a class="study__link link" href="#">Читать больше</a>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
+            <img class="level__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
+            alt="Компас в руке на фоне гор">
+          </picture>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__block footer-info">
+          <a class="footer-info__logo logo" href="#">
+            <svg class="logo__img" role="img" width="108" height="38" aria-labelledby="logotype-footer">
+              <title id="logotype-footer">Логотип «MNTN»</title>
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+          <p class="footer-info__slogan">Отправляйтесь туда и откройте для себя следующий склон, гору и пункт назначения!</p>
+          <p class="footer-info__copyright">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</p>
+        </div>
+        <div class="page-footer__block footer-nav">
+          <h2 class="footer-nav__title">Больше о нашем блоге</h2>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О MNTN</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Участники и писатели</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Пишите нам</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Наши контакты</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__block footer-nav">
+          <h2 class="footer-nav__title">Больше о MNTN</h2>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Команда</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Работа</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Пресса</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </footer>
+</body>
+
+</html>
