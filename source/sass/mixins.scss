@@ -1,0 +1,46 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin reset-list {
+  @include reset;
+  list-style: none;
+}
+
+@mixin hover-nav {
+  position: relative;
+
+  &::after {
+    content: ".";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    height: 2px;
+
+    color: transparent;
+
+    background-color: $color--accent;
+
+    transition: all 0.5s;
+  }
+
+
+  &:hover {
+    color: $color--accent;
+
+    transition: all 0.5s;
+
+
+    &::after {
+      left: 0;
+      width: 100%;
+
+      transition: all 0.5s;
+    }
+  }
+}

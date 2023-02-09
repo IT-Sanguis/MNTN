@@ -1,0 +1,31 @@
+.intro {
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  max-width: 1300px;
+  padding: 0 9vw;
+}
+
+
+.intro__pretitle {
+  margin-bottom: 32px;
+}
+
+
+.intro__title {
+  @include reset;
+
+  margin-bottom: 32px;
+
+  font-size: 5.5rem;
+    // font-size: 4.5vw;
+  line-height: 1.14;
+}
+
+
+.intro__link {
+}

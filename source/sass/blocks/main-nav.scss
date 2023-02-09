@@ -1,0 +1,30 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.main-nav__list {
+  @include reset-list;
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.main-nav__item {
+}
+
+
+.main-nav__link {
+  display: block;
+  padding: 10px 30px;
+
+  color: inherit;
+
+  @include hover-nav;
+}

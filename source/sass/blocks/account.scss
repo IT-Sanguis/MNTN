@@ -1,0 +1,21 @@
+.account {
+}
+
+
+.account__link {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0;
+
+  color: inherit;
+
+  @include hover-nav;
+
+  &--login {
+  }
+}
+
+
+.account__text {
+}

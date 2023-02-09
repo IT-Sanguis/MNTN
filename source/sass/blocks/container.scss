@@ -1,0 +1,10 @@
+.container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 110px;
+
+  &--header {
+    max-width: $desktop-width--header;
+    padding: 0 2vw;
+  }
+}

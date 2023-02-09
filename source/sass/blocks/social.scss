@@ -1,0 +1,48 @@
+.social {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  align-items: center;
+
+  // width: 36px;
+  min-height: 230px;
+}
+
+.social__desc {
+  @include reset;
+
+  // font-size: 1.125rem;
+  // line-height: 1.22;
+  // font-weight: 700;
+  // text-align: center;
+  margin-bottom: 20px;
+  writing-mode: vertical-rl
+}
+
+.social__link {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  color: inherit;
+
+  transition: all 0.5s;
+
+  text-align: center;
+
+  &:hover svg {
+    color: $color--accent;
+    transform-origin: 20%;
+    transform: rotate(360deg);
+    transition: all 0.5s;
+
+  }
+
+  &--instagram {
+  }
+
+  &--twitter {
+  }
+}

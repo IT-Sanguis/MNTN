@@ -14,6 +14,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <title>MNTN | Блог о походах и путешествиях</title>
   <!-- <script src="js/picturefill.min.js" async></script> -->
+
+  <style>
+    ::selection {
+      color: #ffffff;
+      background-color: #d5a840;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,8 +36,9 @@
   </div>
 
   <header class="page-header" id="page-header">
-    <div class="page-header__container container">
-      <div class="page-header__nav-wrapper">
+    <div class="page-header__nav-wrapper">
+      <!-- <div class="page-header__nav-wrapper page-header__nav-wrapper--top"> -->
+      <div class="page-header__flex container container--header">
         <a class="page-header__logo logo" href="#">
           <svg class="logo__img" role="img" width="108" height="38" aria-labelledby="logotype">
             <title id="logotype">Логотип «MNTN»</title>
@@ -51,102 +59,133 @@
           </ul>
           <div class="account">
             <a class="account__link account__link--login" href="#account">
-              <svg role="img" width="30" height="27">
-                <use xlink:href="#account"></use>
+              <svg role="img" width="24" height="24">
+                <use xlink:href="#cart"></use>
               </svg>
               <span class="account__text">Аккаунт</span>
             </a>
           </div>
         </nav>
       </div>
-      <div class="page-header__social social">
-        <p class="social__desc">Подписывайтесь на нас</p>
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/" title="Instagram">#</a>
-        <a class="social__link social__link--twitter" href="https://twitter.com/" title="Twitter">#</a>
-      </div>
-      <nav class="page-header__sidenav sidenav">
-        <ul class="sidenav__list">
-          <li class="sidenav__item"><a class="sidenav__link sidenav__link--current" href="#page-header">Начало</a></li>
-          <li class="sidenav__item"><a class="sidenav__link" href="#level">1</a></li>
-          <li class="sidenav__item"><a class="sidenav__link" href="#essentials">2</a></li>
-          <li class="sidenav__item"><a class="sidenav__link" href="#study">3</a></li>
-        </ul>
-      </nav>
-      <section class="page-header__intro intro">
-        <p class="intro__pretitle pretitle">Путеводитель</p>
-        <h1 class="intro__title title">Будь готов к горам и за их пределами!</h1>
-        <a class="intro__link link link--scroll" href="#">Прокрути вниз</a>
-      </section>
     </div>
+    <div class="page-header__social social">
+      <p class="social__desc">Подписывайтесь</p>
+      <a class="social__link social__link--instagram" href="https://www.instagram.com/" title="Instagram">
+        <svg role="img" width="24" height="24">
+          <use xlink:href="#instagram"></use>
+        </svg>
+      </a>
+      <a class="social__link social__link--twitter" href="https://twitter.com/" title="Twitter">
+        <svg role="img" width="24" height="24">
+          <use xlink:href="#twitter"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="page-header__sidenav sidenav">
+      <ul class="sidenav__list">
+        <li class="sidenav__item"><a class="sidenav__link sidenav__link--current" href="#page-header">Начало</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" href="#level">01</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" href="#essentials">02</a></li>
+        <li class="sidenav__item"><a class="sidenav__link" href="#study">03</a></li>
+      </ul>
+    </nav>
+    <section class="page-header__intro intro">
+      <p class="intro__pretitle pretitle">Путеводитель</p>
+      <h1 class="intro__title title">Будь готов к горам и за их пределами!</h1>
+      <a class="intro__link link link--scroll" href="#level">
+        <span class="link__text">Прокрути вниз</span>
+        <svg role="img" width="16" height="24">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </a>
+    </section>
   </header>
 
   <main>
     <div class="container">
-      <section class="level" id="level">
-        <div class="level__content">
-          <p class="level__pretitle pretitle">Для начала</p>
-          <h2 class="level__title title">Какой у тебя уровень туриста?</h2>
-          <p class="level__desc">Определение уровня твоей горной подготовки может быть важным инструментом при
+      <section class="guide" id="level">
+        <div class="guide__content">
+          <p class="guide__pretitle pretitle">Для начала</p>
+          <h2 class="guide__title title">Какой у тебя уровень туриста?</h2>
+          <p class="guide__desc">Определение уровня твоей горной подготовки может быть важным инструментом при
             планировании будущих вылазок. Этот путеводитель по уровням горных прогулок поможет вам планировать походы
             согласно различным рейтингам, установленными различными сайтами, такими как All Trails и Modern Hiker.
             Какой ты турист - новичок, любитель, продвинутый, специалист или эксперт?</p>
-          <a class="level__link link" href="#">Читать больше</a>
+          <a class="guide__link link" href="#">
+            <span class="link__text">Читать больше</span>
+            <svg role="img" width="16" height="24">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
         </div>
         <picture>
-          <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
-          <img class="level__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
+          <source type="image/webp" srcset="img/photo-path-desktop@1x.webp 1x, img/photo-path-desktop@2x.webp 2x">
+          <img class="guide__img" src="img/photo-path-desktop@1x.jpg" srcset="img/photo-path-desktop@2x.jpg 2x"
             alt="Пеший турист идёт по горной тропе">
         </picture>
       </section>
 
-      <section class="essentials" id="essentials">
-        <div class="essentials__content">
-          <p class="essentials__pretitle pretitle">Походные основы</p>
-          <h2 class="essentials__title title">Выбираем подходящую горную экипировку!</h2>
-          <p class="essentials__desc">Самое приятное в начале пеших походов заключается в том, что вам на самом деле не
+      <section class="guide" id="essentials">
+        <div class="guide__content guide__content--reversed">
+          <p class="guide__pretitle pretitle">Походные основы</p>
+          <h2 class="guide__title title">Выбираем подходящую горную экипировку!</h2>
+          <p class="guide__desc">Самое приятное в начале пеших походов заключается в том, что вам на самом деле не
             нужно никакого специального снаряжения, вы, вероятно, можете обойтись теми вещами, которые у вас уже
             есть.<br>Начнем с одежды. Типичная ошибка, которую допускают начинающие туристы, заключается в том, что они
             носят джинсы и обычную одежду, которая станет тяжелой и будет натирать, если они вспотеют или намокнут.</p>
-          <a class="essentials__link link" href="#">Читать больше</a>
+          <a class="guide__link link" href="#">
+            <span class="link__text">Читать больше</span>
+            <svg role="img" width="16" height="24">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
         </div>
         <picture>
-          <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
-          <img class="essentials__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
+          <source type="image/webp"
+            srcset="img/photo-mountain-desktop@1x.webp 1x, img/photo-mountain-desktop@2x.webp 2x">
+          <img class="guide__img" src="img/photo-mountain-desktop@1x.jpg" srcset="img/photo-mountain-desktop@2x.jpg 2x"
             alt="Пеший турист смотрит на горы, стоя на скале">
         </picture>
       </section>
 
-      <section class="study" id="study">
-        <div class="study__content">
-          <p class="study__pretitle pretitle">Куда вы идете - это ключ</p>
-          <h2 class="study__title title">Поймите свою карту и время</h2>
-          <p class="study__desc">Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в пакет
+      <section class="guide" id="study">
+        <div class="guide__content">
+          <p class="guide__pretitle pretitle">Куда вы идете - это ключ</p>
+          <h2 class="guide__title title">Поймите свою карту и время</h2>
+          <p class="guide__desc">Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в пакет
             Zip-Lock. Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать.
             Мне нравится знать, какой будет мой следующий ориентир во время похода. Например, я читаю путеводитель и
             знаю, что, скажем, через милю я поворачиваю направо на перекрестке.</p>
-            <a class="study__link link" href="#">Читать больше</a>
-          </div>
-          <picture>
-            <source type="image/webp" srcset="img/example-desktop@1x.webp 1x, img/example-desktop@2x.webp 2x">
-            <img class="level__img" src="img/example-desktop@1x.png" srcset="img/example-desktop@2x.png 2x"
-            alt="Компас в руке на фоне гор">
-          </picture>
-        </section>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__block footer-info">
-          <a class="footer-info__logo logo" href="#">
-            <svg class="logo__img" role="img" width="108" height="38" aria-labelledby="logotype-footer">
-              <title id="logotype-footer">Логотип «MNTN»</title>
-              <use xlink:href="#logo"></use>
+          <a class="guide__link link" href="#">
+            <span class="link__text">Читать больше</span>
+            <svg role="img" width="16" height="24">
+              <use xlink:href="#arrow"></use>
             </svg>
           </a>
-          <p class="footer-info__slogan">Отправляйтесь туда и откройте для себя следующий склон, гору и пункт назначения!</p>
-          <p class="footer-info__copyright">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</p>
         </div>
+        <picture>
+          <source type="image/webp" srcset="img/photo-compass-desktop@1x.webp 1x, img/photo-compass-desktop@2x.webp 2x">
+          <img class="guide__img" src="img/photo-compass-desktop@1x.jpg" srcset="img/photo-compass-desktop@2x.jpg 2x"
+            alt="Компас в руке на фоне гор">
+        </picture>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container page-footer__wrapper">
+      <div class="page-footer__block footer-info">
+        <a class="footer-info__logo logo" href="#">
+          <svg class="logo__img" role="img" width="108" height="38" aria-labelledby="logotype-footer">
+            <title id="logotype-footer">Логотип «MNTN»</title>
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <p class="footer-info__slogan">Отправляйтесь туда и откройте для себя следующий склон, гору и пункт назначения!
+        </p>
+        <p class="footer-info__copyright">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</p>
+      </div>
+      <div class="page-footer__block-wrapper">
         <div class="page-footer__block footer-nav">
           <h2 class="footer-nav__title">Больше о нашем блоге</h2>
           <ul class="footer-nav__list">
@@ -181,6 +220,7 @@
             </li>
           </ul>
         </div>
+      </div>
     </div>
   </footer>
 </body>

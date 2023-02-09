@@ -1,0 +1,23 @@
+.footer-info {
+  max-width: 390px;
+}
+
+
+.footer-info__logo {
+  margin-bottom: 24px;
+}
+
+
+.footer-info__slogan {
+  @include reset;
+
+  margin-bottom: 122px;
+}
+
+
+.footer-info__copyright {
+  @include reset;
+
+  font-weight: 500;
+  color: $color--white-50;
+}

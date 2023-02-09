@@ -1,0 +1,34 @@
+.page-footer {
+  position: relative;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: 4.6%;
+}
+
+.page-footer__block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 560px;
+  // flex-basis: 560px;
+}
+
+.page-footer__block {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.page-footer__block:not(:last-child) {
+  // margin-right: 14.5%;
+  margin-right: 30px;
+}
+
+// .page-footer__block:nth-child(2) {
+//   margin-right: auto;
+// }

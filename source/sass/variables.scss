@@ -1,0 +1,36 @@
+$font-family: "Gilroy", "Arial", sans-serif;
+$font-family--title: "Cormorant Garamond", Georgia, serif;
+
+// $desktop-width: 1440px;
+$desktop-width: 1660px;
+$desktop-width--header: $desktop-width + 180px;
+$tablet-width: 660px;
+$mobile-width: 320px;
+
+$color--white: #ffffff;
+$color--white-10: rgba($color--white, 0.1);
+$color--white-30: rgba($color--white, 0.3);
+$color--white-50: rgba($color--white, 0.5);
+$color--white-80: rgba($color--white, 0.8);
+$color--black: #000000;
+$color--black-10: rgba($color--black, 0.1);
+$color--accent: #FBD784;
+$color--primary: $color--white;
+
+
+$color-bg--white: $color--white;
+$color-bg--black: $color--black;
+$color-bg--accent: $color--accent;
+
+$color-bg--primary: #0B1D26;
+
+
+$color-dot: $color--white;
+$color-dot--checked: $color--white-50;
+$color-dot--hover: $color--white-30;
+
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
