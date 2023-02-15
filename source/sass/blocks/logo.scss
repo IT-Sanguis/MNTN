@@ -1,16 +1,11 @@
 .logo {
-  display: flex;
-  color: $color--white;
-  // color: inherit;
-  width: 108px;
-  // justify-content: center;
-  // align-items: center;
-
-  // &:hover {
-  //   color: $color--accent;
-  // }
-
   @include hover-nav;
+
+  display: flex;
+
+  color: $color--white;
+
+  width: 108px;
 }
 
 

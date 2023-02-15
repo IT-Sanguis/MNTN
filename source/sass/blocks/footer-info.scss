@@ -15,9 +15,29 @@
 }
 
 
+.footer-info__social {
+  display: none;
+}
+
+
 .footer-info__copyright {
   @include reset;
 
   font-weight: 500;
   color: $color--white-50;
 }
+
+@media (max-width: $tablet-width) {
+  .footer-info__slogan {
+    margin-bottom: 61px;
+  }
+
+  .footer-info__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-bottom: 61px;
+  }
+}
+

@@ -21,10 +21,11 @@
 
 
 .main-nav__link {
+  @include hover-nav;
+
   display: block;
   padding: 10px 30px;
 
   color: inherit;
 
-  @include hover-nav;
 }

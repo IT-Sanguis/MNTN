@@ -1,5 +1,4 @@
 .social {
-  z-index: 2;
   display: flex;
   flex-direction: column;
   // align-items: flex-start;
@@ -7,6 +6,12 @@
 
   // width: 36px;
   min-height: 230px;
+
+  color: $color--white-80;
+
+  &:hover {
+    color: $color--white;
+  }
 }
 
 .social__desc {
@@ -44,5 +49,12 @@
   }
 
   &--twitter {
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .social {
+    min-height: auto;
   }
 }

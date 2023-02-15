@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <script src="js/index.min.js" defer></script>
   <title>MNTN | Блог о походах и путешествиях</title>
   <!-- <script src="js/picturefill.min.js" async></script> -->
 
@@ -45,6 +46,7 @@
             <use xlink:href="#logo"></use>
           </svg>
         </a>
+        <button class="page-header__burger" type="button" aria-label="Показать/скрыть меню"></button>
         <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -89,16 +91,24 @@
         <li class="sidenav__item"><a class="sidenav__link" href="#study">03</a></li>
       </ul>
     </nav>
-    <section class="page-header__intro intro">
-      <p class="intro__pretitle pretitle">Путеводитель</p>
-      <h1 class="intro__title title">Будь готов к горам и за их пределами!</h1>
-      <a class="intro__link link link--scroll" href="#level">
-        <span class="link__text">Прокрути вниз</span>
-        <svg role="img" width="16" height="24">
-          <use xlink:href="#arrow"></use>
-        </svg>
-      </a>
-    </section>
+
+    <div class="parallax">
+      <div class="parallax__layer parallax__layer--1"></div>
+      <div class="parallax__layer parallax__layer--2"></div>
+      <div class="parallax__layer parallax__layer--3"></div>
+      <section class="parallax__layer parallax__layer--4 page-header__intro intro">
+        <p class="intro__pretitle pretitle">Путеводитель</p>
+        <h1 class="intro__title title">Будь готов к горам и за их пределами!</h1>
+        <a class="intro__link link link--scroll" href="#level">
+          <span class="link__text">Прокрути вниз</span>
+          <svg role="img" width="16" height="24">
+            <use xlink:href="#arrow"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
+
+
   </header>
 
   <main>
@@ -183,6 +193,18 @@
         </a>
         <p class="footer-info__slogan">Отправляйтесь туда и откройте для себя следующий склон, гору и пункт назначения!
         </p>
+        <div class="footer-info__social social">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/" title="Instagram">
+            <svg role="img" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a class="social__link social__link--twitter" href="https://twitter.com/" title="Twitter">
+            <svg role="img" width="24" height="24">
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </a>
+        </div>
         <p class="footer-info__copyright">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</p>
       </div>
       <div class="page-footer__block-wrapper">
@@ -226,3 +248,6 @@
 </body>
 
 </html>
+
+
+

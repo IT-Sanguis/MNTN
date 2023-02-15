@@ -1,0 +1,55 @@
+.parallax {
+  position: relative;
+  z-index: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: hidden;
+}
+
+
+
+.parallax__layer {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  will-change: transform;
+}
+
+.parallax__layer--1 {
+  top: 0;
+
+  background-image: url("../img/bg-hg-desktop@1x.png"), linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%);
+
+  transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+}
+
+.parallax__layer--2 {
+  top: 25%;
+
+  background-image: url("../img/bg-mg-desktop@1x.png");
+
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
+
+.parallax__layer--3 {
+  top: 40%;
+
+  background-image: url("../img/bg-vg-desktop@1x.png");
+
+  transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+}
+
+.parallax__layer--4 {
+  top: -15%;
+
+  transform: translate3d(-50%, calc(var(--scrollTop) / 2), 0);
+}

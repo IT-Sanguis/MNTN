@@ -1,4 +1,7 @@
 .guide {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -32,8 +35,6 @@
     line-height: 1;
     font-weight: 700;
     color: $color--white-10;
-
-    // transform: translate(-50%);
   }
 
 
