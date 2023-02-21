@@ -2,7 +2,8 @@
   @include reset;
 
   font-family: $font-family--title;
-  font-size: 4rem;
+  // font-size: 4rem;
+  font-size: calc(var(--index) * 2.05);
       // font-size: 3.3vw;
 
 

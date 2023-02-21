@@ -27,17 +27,42 @@
   color: $color--white-50;
 }
 
+
+@media (max-width: $desktop-width) {
+  .footer-info {
+    flex-shrink: 2;
+  }
+}
+
+
+@media (max-width: $desktop-width--min) {
+  .footer-info {
+    align-self: center;
+
+    text-align: center;
+  }
+
+
+  .footer-info__logo {
+    margin: 0 auto 24px;
+  }
+}
+
+
 @media (max-width: $tablet-width) {
+  // .footer-info {
+  //   align-self: center;
+  // }
   .footer-info__slogan {
     margin-bottom: 61px;
   }
 
+
   .footer-info__social {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
     margin-bottom: 61px;
   }
 }
-

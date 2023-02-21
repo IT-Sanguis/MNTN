@@ -23,24 +23,27 @@
 
   &:hover svg {
     transform: rotate(630deg);
-    transition: all 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
   }
 
 
   &--scroll {
     color: $color--white;
 
+
     svg {
       transform: none;
     }
+
 
     &:hover {
       animation: arrow-bottom 300ms ease-in-out alternate infinite;
     }
 
+
     &:hover svg {
       transform: rotate(360deg);
-      transition: all 200ms ease-in-out;
+      transition: transform 200ms ease-in-out;
     }
   }
 }
@@ -55,6 +58,7 @@
   from {
     transform: translate(0);
   }
+
   to {
     transform: translate(0.25rem);
   }
@@ -65,6 +69,7 @@
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(0.25rem);
   }

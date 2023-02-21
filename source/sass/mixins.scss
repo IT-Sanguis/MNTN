@@ -24,21 +24,21 @@
 
     background-color: $color--accent;
 
-    transition: all 0.5s;
+    transition: background 0.5s, width 0.5s, left 0.5s;
   }
 
 
   &:hover {
     color: $color--accent;
 
-    transition: all 0.5s;
+    transition: color 0.5s;
 
 
     &::after {
       left: 0;
       width: 100%;
 
-      transition: all 0.5s;
+      transition: width 0.5s, left 0.5s;
     }
   }
 }

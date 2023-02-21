@@ -9,7 +9,14 @@
   max-width: 1300px;
   padding: 0 9vw;
 
-  position: relative;
+  // position: relative;
+
+//  ----------------------
+  // margin: 0 auto;
+  position: absolute;
+  // left: 50%;
+  top: 5%;
+  // width: auto;
 }
 
 
@@ -23,11 +30,33 @@
 
   margin-bottom: 32px;
 
-  font-size: 5.5rem;
-    // font-size: 4.5vw;
+  // font-size: 5.5rem;
+  font-size: calc(var(--index) * 2.8);
   line-height: 1.14;
 }
 
 
-.intro__link {
+// .intro__link {
+// }
+
+
+.no-js .intro {
+  top: 24%;
+}
+
+
+@media (max-width: $desktop-width--min) {
+  .intro {
+    top: 24%;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .no-js {
+    .intro {
+      margin-top: 240px;
+      top: 10%;
+    }
+  }
 }

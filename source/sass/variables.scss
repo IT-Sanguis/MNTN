@@ -1,9 +1,12 @@
 $font-family: "Gilroy", "Arial", sans-serif;
-$font-family--title: "Cormorant Garamond", Georgia, serif;
+$font-family--title: "Cormorant Garamond", "Georgia", serif;
 
 // $desktop-width: 1440px;
-$desktop-width: 1660px;
-$desktop-width--header: $desktop-width + 180px;
+$desktop-width--max: 1660px;
+$desktop-width--header: $desktop-width--max + 180px;
+$desktop-width: 1200px;
+$desktop-width--min: 960px;
+
 $tablet-width: 660px;
 $mobile-width: 320px;
 
@@ -37,5 +40,7 @@ $retina-dppx: 1.5dppx;
 
 
 :root {
-  --scrollTop: 0px;
+  // --scrollTop: 0px;
+  // --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+  --index: calc(1vw + 1vh);
 }

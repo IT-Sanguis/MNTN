@@ -16,8 +16,8 @@
 }
 
 
-.main-nav__item {
-}
+// .main-nav__item {
+// }
 
 
 .main-nav__link {
@@ -28,4 +28,39 @@
 
   color: inherit;
 
+}
+
+
+@media (max-width: $desktop-width--min) {
+  .main-nav {
+    display: none;
+
+
+    &--open {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+
+      .main-nav__list {
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+
+      .account__text {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: $tablet-width) {
+  .no-js {
+    .main-nav__list {
+      flex-direction: column;
+    }
+  }
 }

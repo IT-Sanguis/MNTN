@@ -1,5 +1,5 @@
-.account {
-}
+// .account {
+// }
 
 
 .account__link {
@@ -12,11 +12,28 @@
 
   @include hover-nav;
 
-  &--login {
-  }
+
+  // &--login {
+  // }
 }
 
 
 .account__text {
   padding-left: 8px;
 }
+
+
+@media (max-width: $desktop-width--min) {
+  .no-js {
+    .account__text {
+      display: none;
+    }
+  }
+
+
+  .account__link {
+    padding: 10px 30px;
+  }
+}
+
+

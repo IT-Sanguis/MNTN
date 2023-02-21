@@ -22,7 +22,8 @@
   // font-weight: 700;
   // text-align: center;
   margin-bottom: 20px;
-  writing-mode: vertical-rl
+  writing-mode: vertical-rl;
+  cursor: default;
 }
 
 .social__link {
@@ -33,7 +34,7 @@
 
   color: inherit;
 
-  transition: all 0.5s;
+  transition: color 0.5s;
 
   text-align: center;
 
@@ -41,15 +42,14 @@
     color: $color--accent;
     transform-origin: 20%;
     transform: rotate(360deg);
-    transition: all 0.5s;
-
+    transition: transform 0.5s, color 0.5s;
   }
 
-  &--instagram {
-  }
+  // &--instagram {
+  // }
 
-  &--twitter {
-  }
+  // &--twitter {
+  // }
 }
 
 

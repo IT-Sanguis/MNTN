@@ -1,13 +1,39 @@
 .parallax {
+position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    width: 100%;
+    height: 20%;
+
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, $color-bg--primary 61.38%);
+  }
+}
+
+
+.parallax__wrapper {
   position: relative;
   z-index: 0;
 
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  // width: 100vw;
   height: 100vh;
 
   overflow-y: hidden;
-}
 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+}
 
 
 .parallax__layer {
@@ -25,31 +51,152 @@
 }
 
 .parallax__layer--1 {
-  top: 0;
+  // top: 0;
+  // transition: var(--transition);
+  // transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+}
 
-  background-image: url("../img/bg-hg-desktop@1x.png"), linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%);
 
-  transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+.webp .parallax__layer--1 {
+  background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.webp");
+  }
+}
+
+
+.no-webp .parallax__layer--1 {
+  background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.png");
+  }
 }
 
 .parallax__layer--2 {
-  top: 25%;
+  top: 45%;
+  // transition: var(--transition);
+  // transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
 
+.webp .parallax__layer--2 {
+  background-image: url("../img/bg-mg-desktop@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-mg-desktop@2x.webp");
+  }
+}
+
+.no-webp .parallax__layer--2 {
   background-image: url("../img/bg-mg-desktop@1x.png");
 
-  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-mg-desktop@2x.png");
+  }
 }
 
 .parallax__layer--3 {
   top: 40%;
 
-  background-image: url("../img/bg-vg-desktop@1x.png");
-
-  transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+  // transition: var(--transition);
+  // transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
 }
 
-.parallax__layer--4 {
-  top: -15%;
+.webp .parallax__layer--3 {
+  background-image: url("../img/bg-vg-desktop@1x.webp");
 
-  transform: translate3d(-50%, calc(var(--scrollTop) / 2), 0);
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-vg-desktop@2x.webp");
+  }
+}
+
+.no-webp .parallax__layer--3 {
+  background-image: url("../img/bg-vg-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-vg-desktop@2x.png");
+  }
+}
+
+.no-js {
+  .parallax__wrapper {
+    background-image: url("../img/bg-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-desktop@2x.jpg");
+    }
+  }
+
+  .parallax__layer {
+    display: none;
+  }
+
+
+  @media (max-width: $desktop-width--min) {
+    .parallax__wrapper {
+      background-image: url("../img/bg-desktop-min@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-desktop@1x.jpg");
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+  .parallax__wrapper {
+      background-image: url("../img/bg-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-width--min) {
+  .parallax__layer {
+    display: none;
+  }
+
+  .webp .parallax__wrapper {
+    background-image: url("../img/bg-desktop-min@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-desktop@1x.webp");
+    }
+  }
+
+  .no-webp .parallax__wrapper {
+    background-image: url("../img/bg-desktop-min@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-desktop@1x.jpg");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .parallax__layer {
+    display: none;
+  }
+
+  .webp .parallax__wrapper {
+    background-image: url("../img/bg-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-tablet@2x.webp");
+    }
+  }
+
+  .no-webp .parallax__wrapper {
+    background-image: url("../img/bg-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-tablet@2x.jpg");
+    }
+  }
 }

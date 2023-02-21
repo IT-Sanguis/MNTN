@@ -1,6 +1,4 @@
 .sidenav {
-  z-index: 2;
-
   width: 77px;
   min-height: 240px;
 
@@ -13,8 +11,8 @@
 }
 
 
-.sidenav__item {
-}
+// .sidenav__item {
+// }
 
 
 .sidenav__link {
@@ -48,7 +46,7 @@
     background-image: linear-gradient(to right, transparent, $color--white-10);
     background-repeat: no-repeat;
     background-position-x: 30px;
-    transition: all 0.5s;
+    transition: background 0.7s, color 0.5s;
 
 
     &::after {
@@ -65,5 +63,25 @@
     }
   }
 
+}
+
+.sidenav__text {
+  &--short {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .sidenav {
+    width: 35px;
+  }
+
+  .sidenav__text {
+    display: none;
+
+    &--short {
+      display: block;
+    }
+  }
 }
 

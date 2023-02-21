@@ -1,5 +1,5 @@
 .container {
-  max-width: $desktop-width;
+  max-width: $desktop-width--max;
   margin: 0 auto;
   padding: 0 110px;
 
@@ -8,3 +8,28 @@
     padding: 0 2vw;
   }
 }
+
+
+@media (max-width: $desktop-width) {
+  .container {
+    padding: 0 75px;
+
+
+    &--header {
+      padding: 0 2vw;
+    }
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .container {
+    padding: 0 2vw;
+
+
+    &--header {
+      padding: 0 2vw;
+    }
+  }
+}
+

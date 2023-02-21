@@ -61,6 +61,7 @@ function copy() {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
+    "source/libs/**",
     "source/*.html"
     ], {
     base: "source"
@@ -148,9 +149,10 @@ function reload() {
 
 
 function watchTask() {
-  gulp.watch("source/sass/**/*.scss", style)
-  gulp.watch("source/*.html").on("change", updateHTML)
-  gulp.watch("source/js/**/*.js").on("change", updateJS)
+  gulp.watch("source/sass/**/*.scss", style);
+  gulp.watch("source/*.html").on("change", updateHTML);
+  gulp.watch("source/js/**/*.js").on("change", updateJS);
+  // gulp.watch("source/img/**/*.{png,jpg,svg}").on("change", updateIMG);
 }
 
 
