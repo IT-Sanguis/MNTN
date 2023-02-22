@@ -32,7 +32,7 @@ position: relative;
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 15%;
+  background-position-x: 25%;
 }
 
 
@@ -98,6 +98,7 @@ position: relative;
 
 .parallax__layer--3 {
   top: 40%;
+  background-position-x: 25%;
 
   // transition: var(--transition);
   // transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
@@ -157,6 +158,14 @@ position: relative;
   }
 }
 
+
+// @media (max-width: $desktop-width) {
+//   .parallax__layer--3 {
+//     background-position-x: 25%;
+//   }
+// }
+
+
 @media (max-width: $desktop-width--min) {
   .parallax__layer {
     display: none;
@@ -178,6 +187,7 @@ position: relative;
     }
   }
 }
+
 
 @media (max-width: $tablet-width) {
   .parallax__layer {

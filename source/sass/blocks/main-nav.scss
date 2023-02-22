@@ -35,11 +35,15 @@
   .main-nav {
     display: none;
 
-
     &--open {
       display: flex;
       width: 100%;
       flex-direction: column;
+
+      animation-name: fadein;
+      animation-duration: 0.6s;
+      // animation-direction: alternate;
+
 
 
       .main-nav__list {
@@ -64,3 +68,12 @@
     }
   }
 }
+
+
+@keyframes fadein {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
