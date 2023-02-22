@@ -1,14 +1,12 @@
 document.documentElement.classList.remove("no-js");
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
 let mm = gsap.matchMedia();
 
 const sidenavLink = document.querySelectorAll(".sidenav__link");
 const linkScroll = document.querySelector("#linkScroll");
 const sections = document.querySelectorAll(".js-nav");
-
-let items = gsap.utils.toArray(".guide__content:not(.guide__content--reversed)");
-let itemsReversed = gsap.utils.toArray(".guide__content--reversed");
-let img = gsap.utils.toArray(".guide picture");
 
 let i = 0;
 
@@ -29,18 +27,29 @@ burger.addEventListener("click", function(evt) {
 
 //-------------------------------------------------------------
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 
 ScrollTrigger.create({
   start: "top -80",
   end: 99999,
-  toggleClass: { className: "page-header__nav-wrapper--scroll", targets: ".page-header__nav-wrapper" }
+  // toggleClass: { className: "page-header__nav-wrapper--scroll", targets: ".page-header__nav-wrapper" },
+  // markers: true
+
+  onEnter: () => {
+    document.querySelector(".page-header__nav-wrapper").classList.add("page-header__nav-wrapper--scroll");
+  },
+  onLeaveBack: () => {
+    document.querySelector(".page-header__nav-wrapper").classList.remove("page-header__nav-wrapper--scroll");
+  }
 });
 
 
 if (ScrollTrigger.isTouch !==1) {
 mm.add("(min-width: 961px)", () => {
+
+  let items = gsap.utils.toArray(".guide__content:not(.guide__content--reversed)");
+  let itemsReversed = gsap.utils.toArray(".guide__content--reversed");
+  let img = gsap.utils.toArray(".guide picture");
 
   ScrollSmoother.create({
     wrapper: ".wrapper",

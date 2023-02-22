@@ -40,9 +40,9 @@
 // }
 
 
-// .no-js .intro {
-//   top: 24%;
-// }
+.no-js .intro {
+  position: static;
+}
 
 
 @media (max-width: $desktop-width--min) {
