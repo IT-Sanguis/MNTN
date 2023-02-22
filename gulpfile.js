@@ -98,7 +98,7 @@ function js() {
 
 
 function images() {
-  return gulp.src("build/img/**/*.{png,jpg,svg}")
+  return gulp.src(["build/img/**/*.{png,jpg,svg}"])
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 5}),
     imagemin.mozjpeg({quality: 70, progressive: true}),
@@ -119,7 +119,7 @@ function sprite () {
 
 
 function exportWebP() {
-  return gulp.src("build/img/**/*.{png,jpg}")
+  return gulp.src(["build/img/**/*.{png,jpg}", "!build/img/favicons/**/*"])
     .pipe(imagemin([
       webp({
         quality: 80
