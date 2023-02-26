@@ -50,73 +50,79 @@ position: relative;
   will-change: transform;
 }
 
-.parallax__layer--1 {
-  // top: 0;
-  // transition: var(--transition);
-  // transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
-}
 
 
-.webp .parallax__layer--1 {
-  background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.webp");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.webp");
+// @media (min-width: 961px) {
+@media (min-width: ($desktop-width--min + 1)) {
+  .parallax__layer--1 {
+    // top: 0;
+    // transition: var(--transition);
+    // transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
   }
-}
 
 
-.no-webp .parallax__layer--1 {
-  background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.png");
+  .webp .parallax__layer--1 {
+    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.webp");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.webp");
+    }
   }
-}
 
-.parallax__layer--2 {
-  top: 45%;
-  // transition: var(--transition);
-  // transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-}
 
-.webp .parallax__layer--2 {
-  background-image: url("../img/bg-mg-desktop@1x.webp");
+  .no-webp .parallax__layer--1 {
+    background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-mg-desktop@2x.webp");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(330.24deg, $color-bg--primary-0 31.06%, $color-bg--primary 108.93%), url("../img/bg-hg-desktop@2x.png");
+    }
   }
-}
 
-.no-webp .parallax__layer--2 {
-  background-image: url("../img/bg-mg-desktop@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-mg-desktop@2x.png");
+  .parallax__layer--2 {
+    top: 45%;
+    // transition: var(--transition);
+    // transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
   }
-}
 
-.parallax__layer--3 {
-  top: 40%;
-  background-position-x: 25%;
+  .webp .parallax__layer--2 {
+    background-image: url("../img/bg-mg-desktop@1x.webp");
 
-  // transition: var(--transition);
-  // transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
-}
-
-.webp .parallax__layer--3 {
-  background-image: url("../img/bg-vg-desktop@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-vg-desktop@2x.webp");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-mg-desktop@2x.webp");
+    }
   }
-}
 
-.no-webp .parallax__layer--3 {
-  background-image: url("../img/bg-vg-desktop@1x.png");
+  .no-webp .parallax__layer--2 {
+    background-image: url("../img/bg-mg-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-vg-desktop@2x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-mg-desktop@2x.png");
+    }
+  }
+
+  .parallax__layer--3 {
+    top: 40%;
+    background-position-x: 25%;
+
+    // transition: var(--transition);
+    // transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+  }
+
+  .webp .parallax__layer--3 {
+    background-image: url("../img/bg-vg-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-vg-desktop@2x.webp");
+    }
+  }
+
+  .no-webp .parallax__layer--3 {
+    background-image: url("../img/bg-vg-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-vg-desktop@2x.png");
+    }
   }
 }
 

@@ -10,11 +10,20 @@
   <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Gilroy-Extrabold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <!-- <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script> -->
   <script src="libs/modernizr-custom.js"></script>
   <script src="libs/gsap/gsap.min.js" defer></script>
   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -34,15 +43,16 @@
 
 <body>
 
-  <div class="preloader">
-    <div class="preloader__row">
-      <div class="preloader__item"></div>
-      <div class="preloader__item"></div>
-    </div>
-  </div>
   <div style="display:none">
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
+  <!-- <div class="preloader">
+    <div class="preloader__item">
+      <svg role="img" width="540" height="190">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </div>
+  </div> -->
   <header class="page-header js-nav" id="begin">
     <div class="page-header__nav-wrapper">
       <div class="page-header__flex container container--header">
@@ -260,7 +270,6 @@
       </footer>
     </div>
   </div>
-
 </body>
 
 </html>
